@@ -11,6 +11,7 @@ import Navbar from './components/Navbar'
 import SideEffect from './components/SideEffect'
 import { Users } from './components/Users'
 import { UserList } from './components/UserList'
+import { Posts } from './components/Posts/Posts'
 // Here App is a React Functional Component
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='side-effect' Component={SideEffect} />
             <Route path='increment' Component={IncrementDecrement} />
             <Route path='users' Component={UserList} />
+            <Route path='posts/:id' Component={Posts} />
             <Route path='about' Component={About}>
               <Route path='company' Component={AboutCompany} />
               <Route path='products' Component={AboutProducts} />
