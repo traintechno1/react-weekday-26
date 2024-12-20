@@ -1,0 +1,23 @@
+.car-holder{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.car-container{
+    border: 1px solid #d2d3d3;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 6px #a1a1a1;
+    min-width: 230px;
+    flex: 1;
+}
+
+.heading{
+    margin: 0.3rem 0;
+}
+
+.label{
+    font-weight: 600;
+}

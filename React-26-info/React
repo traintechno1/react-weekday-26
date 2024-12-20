@@ -1,0 +1,38 @@
+            - React is a JS library for creating User Interfaces.
+            - React is an open source library create by Meta but now maintained by meta and open source community.
+            - React is used to create interactive SPA(Single Page Applications).    
+    
+
+
+
+    MERN:
+        MongoDb    -> Database
+        ExpressJs  -> Backend Framework
+        ReactJs    -> Frontend Framework
+        NodeJs     -> Server to run JS
+
+
+
+    Frontend ------------------------------> Middleware/ ---------------------------> Database
+                                             Backend                            
+    (Request for                            (Request received                         (Application data store)
+    Resource)                                 and process,
+                                            response send)
+
+    - React                                 - NodeJs                                    - MongoDb
+                                            - ExpressJs                                          
+
+
+            Prerequisites:
+                - HTML
+                - CSS
+                - JS
+            
+            System Requirement:
+                - NodeJs should be installed
+                - Good to have one IDE(VS Code is prefered)
+
+    
+    Creating React Application:
+    1) CRA(Create React App)- Legacy way of creating react app
+    2) Vite

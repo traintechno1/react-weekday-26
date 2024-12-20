@@ -1,0 +1,15 @@
+.user-list{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.user-container{
+    min-width: 350px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    flex: 1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}

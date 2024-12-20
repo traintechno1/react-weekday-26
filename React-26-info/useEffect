@@ -1,0 +1,23 @@
+                useEffect Hook
+
+    - useEffect is one of the most important and powerful hooks of react.
+    - It is used to perfrom some side effects like fetching data, subscribing to events and so on.
+
+
+    syntax:
+    import {useEffect} from 'React;
+
+    function ComponentName(){
+        
+        useEffect(()=>{}, [dependecies]);
+
+        return(
+            <>Component Content</>
+        )
+    }
+        
+    - in useEffect() first parameter will be a callback function which gets executed when 
+    one of the second parameter that is in dependency array gets changed.
+    - dependency array can have state variable/s or it can be empty.
+    - when we keep dependecy array empty that useEffect gets only called once that is on 
+    component load.

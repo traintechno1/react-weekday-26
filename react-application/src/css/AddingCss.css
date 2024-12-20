@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid green;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 1.5rem;
+}

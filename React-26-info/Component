@@ -1,0 +1,81 @@
+                         Component
+                         
+    - Component is a reusable piece of Code.
+    - We can use the React component to display some UI.
+    - Once you create a component it can be called multiple times.
+    - Now react uses function based components which returns special syntax whixh only 
+        react can interprete and display in UI and that syntax is called ad JSX.
+    - JSX is Javascript XML, which is combination of HTML, CSS, JS but in react way.
+    - Function based component can be created in both the way with function keyword or an arrow function.
+    - A function which we want to make as Component should have its first character in its name as Capital Letter.
+    - A File name will have an extention as .jsx
+    - A file name is prefered to be same as the function name which is returning a JSX from that file.
+    - A function name should be Camel case.
+    - Through a function we can return only one JSX.
+
+    syntax:
+
+        function FunctionName(){
+            return(
+                JSX
+            )
+        }
+
+
+    When we call a Child component inside Parent Component JSX where Parent and Child are React 
+    Components, if we need to pass some data from Parent component to Child Component we can use 
+    special feature of react called as props.
+
+
+I) Parent to Child Data Transfer
+    ex:
+
+    Parent
+
+
+    return(
+        <>
+            // here you want to pass some data from Parent to Child then we can use
+            // Props
+            <Child 
+                    propertyName={dataFromParent}
+                />
+
+        </>
+    )
+
+    // To receive the data sent from parent in the child we get this data in key
+    // propertyName
+
+
+    // we can get the data in one of the 2 ways.
+    // in the object as props
+1) 
+    function Child(props){
+
+        return(
+            <>
+
+                {
+                    props.propertyName
+                }
+
+            </>
+        )
+    }
+
+2) or directly destructure the object
+    
+    function Child({propertyName}){
+
+        return(
+            <>
+
+                {
+                    propertyName
+                }
+
+            </>
+        )
+    }
+
