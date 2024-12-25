@@ -1,0 +1,149 @@
+                                MongoDB
+            - Database: Database is a storage for data.
+        
+        MongoDB: 
+            - MongoDB is a non relational database management system.
+            - Data in MongoDB is stored in the form of Object.
+            - It is an object oriented database.
+
+
+            syntax:
+            {
+                key: value,
+                key: value,
+                key: value,
+                key: value
+            }
+
+        Database
+
+            -Collections
+                ex: user, products, addresses
+            
+            Documents:
+                {
+                    key: value,
+                    key: value,
+                    key: value,
+                    key: value
+                }
+
+            Fields:
+
+
+            Queries Using Command prompt:
+
+
+            1) To Get List of all databases:
+                syntax:
+                    > show dbs;
+                
+            2) To use existing or create new database:
+                syntax:
+                    > use <datbase_name>;
+                ex:
+                    > use React26;
+            
+            3) To Get List of all the collections:
+                syntax:
+                    > show collections;
+            
+            4) To Create a collection in DB:
+                syntax:
+                    > db.createCollection('collection_name');
+                
+                ex:
+                    > db.createCollection('cars');
+            
+            5) To create a single document inside a collection:
+                syntax:
+                    > db.<collection_name>.insertOne({
+                        key: value,
+                        key: value,
+                        key: value,
+                        key: value,
+                        key: value
+                    })
+                ex:
+                    > db.cars.insertOne({
+                        name: 'Creta',
+                        brand: 'Hyndai',
+                        fuelType: 'Petrol'
+                    })
+
+            6) To insert many documents inside a collection:
+                syntax:
+                    > db.<collection_name>.insertMany([
+                        {
+                            key: value,
+                            key: value,
+                            key: value,
+                            key: value,
+                            key: value
+                        },
+                        {
+                            key: value,
+                            key: value,
+                            key: value,
+                            key: value,
+                            key: value
+                        },
+                        {
+                            key: value,
+                            key: value,
+                            key: value,
+                            key: value,
+                            key: value
+                        },
+                    ])
+
+                    ex:
+                        > db.cars.insertMany([
+                            {
+                                name: 'Creta',
+                                brand: 'Hyndai',
+                                fuelType: 'Petrol'
+                            },
+                            {
+                                name: 'Creta',
+                                brand: 'Hyndai',
+                                fuelType: 'Petrol'
+                            },
+                            {
+                                name: 'Creta',
+                                brand: 'Hyndai',
+                                fuelType: 'Petrol'
+                            },
+                        ])
+
+            7) To get list of all the documents from a collection:
+                syntax:
+                    > db.<collection_name>.find();
+                ex:
+                    > db.cars.find();
+                    > db.cars.find({name: 'Creta'});
+                    > db.cars.findOne({name: 'Creta'});
+
+            8) To delete a document from collection:
+                syntax:
+                    > db.<collection_name>.deleteOne({condition});
+                ex:
+                    > db.cars.deleteOne({name: 'Test'});
+
+            9) To Update a document from collection:
+                syntax:
+                    > db.<collection_name>.updateOne({condition/filter}, 
+                    { $set: {
+                        new parameters
+                    }})
+
+                ex:
+                    > db.cars.updateOne({_id: ObjectId('676a174e5bb15cb3709be542')}, {
+                        $set: {brand: 'Hyundai'}
+                    })
+
+                    > db.cars.updateOne({_id: ObjectId('676a174e5bb15cb3709be542')}, {$set: {price: 2100000}});
+
+                    > db.cars.updateOne({name: 'Creta'}, {$set: {brand: 'Hyundai'}});
+
+

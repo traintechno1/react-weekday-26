@@ -13,7 +13,6 @@ export const Posts = () =>{
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then((posts)=>{
                 let filteredPosts = posts?.data?.filter((post)=>post.userId == id)
-                console.log(filteredPosts);
                 setPosts(filteredPosts);
             })
             .catch((e)=>{
