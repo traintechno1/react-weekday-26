@@ -1,0 +1,5 @@
+                                    NodeJs
+        - NodeJs is a javascript runtime build on V8 Engine.
+        - Allows us for running JS on the server-side.
+
+        - Every Js file is a different module.
